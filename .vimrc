@@ -11,6 +11,7 @@ let g:Powerline_symbols = 'unicode'
 " get the font from https://github.com/Lokaltog/powerline-fonts.git
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
 set shiftwidth=2
+set softtabstop=2
 set smartindent
 set autoindent
 set number
@@ -20,6 +21,7 @@ set laststatus=2
 set encoding=utf-8
 set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
+set expandtab
 
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
@@ -42,7 +44,7 @@ noremap <tab> <c-w><c-w>
 nmap <leader>n :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 
 " CtrlP
 nnoremap <silent> t :CtrlP<cr>
