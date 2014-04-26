@@ -22,20 +22,24 @@ set encoding=utf-8
 set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
 set expandtab
+set wildignore+=vendor/**
+set wildignore+=log/**
+let mapleader=","
 
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
-Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
 Bundle 'kien/ctrlp.vim'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'L9'
 Bundle 'scrooloose/nerdtree'
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'tcomment'
 
 " Tab between buffers
 noremap <tab> <c-w><c-w>
