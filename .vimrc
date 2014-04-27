@@ -1,9 +1,11 @@
 set nocompatible              " be iMproved, required
+
+syntax on
 filetype off                  " required
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-syntax on
 colorscheme railscasts
 set background=dark
 let g:Powerline_symbols = 'unicode'
