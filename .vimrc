@@ -8,10 +8,11 @@ call vundle#rc()
 
 colorscheme railscasts
 set background=dark
-let g:Powerline_symbols = 'unicode'
 
 " get the font from https://github.com/Lokaltog/powerline-fonts.git
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'unicode'
+set encoding=utf-8
 set shiftwidth=2
 set softtabstop=2
 set smartindent
