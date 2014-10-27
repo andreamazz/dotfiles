@@ -26,9 +26,13 @@ set fillchars+=stl:\ ,stlnc:\
 set expandtab
 set wildignore+=vendor/**
 set wildignore+=log/**
+set hlsearch
+set incsearch
 let mapleader=","
+set backspace=2
 
 Bundle 'gmarik/vundle'
+Bundle 'Keithbsmiley/swift.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rails'
