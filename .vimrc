@@ -33,6 +33,7 @@ let mapleader=","
 set backspace=2
 
 Bundle 'gmarik/vundle'
+Bundle 'scrooloose/syntastic'
 Bundle 'Keithbsmiley/swift.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
