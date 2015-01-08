@@ -67,6 +67,13 @@ let g:ctrlp_max_depth = 5
 
 filetype plugin indent on
 
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+
+set pastetoggle=<F2>
+
 " Brief help
 " :PluginList          - list configured plugins
 " :PluginInstall(!)    - install (update) plugins
