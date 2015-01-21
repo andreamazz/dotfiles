@@ -31,6 +31,8 @@ set hlsearch
 set incsearch
 let mapleader=","
 set backspace=2
+set mouse=a
+set ttymouse=xterm2
 
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/syntastic'
