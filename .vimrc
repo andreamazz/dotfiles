@@ -8,11 +8,10 @@ call vundle#rc()
 
 colorscheme railscasts
 set background=dark
+let g:Powerline_symbols = 'unicode'
 
 " get the font from https://github.com/Lokaltog/powerline-fonts.git
-set guifont=Inconsolata\ for\ Powerline:h15
-let g:Powerline_symbols = 'unicode'
-set encoding=utf-8
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
 set shiftwidth=2
 set softtabstop=2
 set smartindent
@@ -50,9 +49,13 @@ Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'tcomment'
+Bundle 'slim-template/vim-slim.git'
 
 " Tab between buffers
 noremap <tab> <c-w><c-w>
+
+" Enable cmd-C in Visual Mode to copy in the system's clipboard
+map <C-c> "+y<CR>
 
 " NERDTree
 nmap <leader>n :NERDTreeToggle<CR>
