@@ -10,6 +10,13 @@ colorscheme railscasts
 set background=dark
 let g:Powerline_symbols = 'unicode'
 
+if exists("&undodir")
+  set undofile          "Persistent undo! Pure money.
+  let &undodir=&directory
+  set undolevels=500
+  set undoreload=500
+endif
+
 " get the font from https://github.com/Lokaltog/powerline-fonts.git
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
 set shiftwidth=2
@@ -56,6 +63,7 @@ noremap <tab> <c-w><c-w>
 
 " Enable cmd-C in Visual Mode to copy in the system's clipboard
 map <C-c> "+y<CR>
+set clipboard=unnamed
 
 " NERDTree
 nmap <leader>n :NERDTreeToggle<CR>
