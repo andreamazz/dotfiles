@@ -57,6 +57,7 @@ Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'tcomment'
 Bundle 'slim-template/vim-slim.git'
+Bundle 'pangloss/vim-javascript'
 
 " Tab between buffers
 noremap <tab> <c-w><c-w>
