@@ -57,10 +57,15 @@ Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'tcomment'
 Bundle 'slim-template/vim-slim.git'
+Bundle 'mxw/vim-jsx'
 Bundle 'pangloss/vim-javascript'
+Bundle 'wavded/vim-stylus'
 
 " Tab between buffers
 noremap <tab> <c-w><c-w>
+
+nnoremap j gj
+nnoremap k gk
 
 " Enable cmd-C in Visual Mode to copy in the system's clipboard
 map <C-c> "+y<CR>
@@ -79,6 +84,14 @@ let g:ctrlp_by_filename = 1
 let g:ctrlp_max_files = 600
 let g:ctrlp_max_depth = 5
 
+" enable line numbers
+let NERDTreeShowLineNumbers=1
+" make sure relative line numbers are used
+autocmd FileType nerdtree setlocal relativenumber
+
+" JSX
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
 filetype plugin indent on
 
 :command WQ wq
@@ -88,12 +101,6 @@ filetype plugin indent on
 
 set pastetoggle=<F2>
 
-" Brief help
-" :PluginList          - list configured plugins
-" :PluginInstall(!)    - install (update) plugins
-" :PluginSearch(!) foo - search (or refresh cache first) for foo
-" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Plugin commands are not allowed.
-" Put your stuff after this line
+" Ctrl-n to toggle relative line numbers
+nnoremap <C-n> :set relativenumber!<cr>
+
